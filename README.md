@@ -12,8 +12,33 @@ Open a terminal and execute the following command to install `wkhtmltopdf` using
 
 ```bash
 brew install --cask wkhtmltopdf
+```
 
 ### Windows
-Open a web browser and go to the wkhtmltopdf download page: https://wkhtmltopdf.org/downloads.html
-Choose the appropriate Windows version for your system (e.g., Windows 64-bit) and download the installer.
-Run the installer and follow the installation instructions.
+1) Open a web browser and go to the wkhtmltopdf download page: https://wkhtmltopdf.org/downloads.html
+2) Choose the appropriate Windows version for your system (e.g., Windows 64-bit) and download the installer.
+3) Run the installer and follow the installation instructions.
+
+### Linux
+Open a terminal and execute the following command to install wkhtmltopdf:
+On Debian/Ubuntu-based systems:
+```bash
+sudo apt-get install wkhtmltopdf
+```
+On Fedora:
+```bash
+sudo apt-get install wkhtmltopdf
+```
+On CentOS:
+```bash
+sudo yum install wkhtmltopdf
+```
+
+## Running the Tool
+After you have wkhtmltopdf installed, you can run the WebScraper tool using the following command:
+```bash
+python web_scraper.py website_url output_directory
+```
+
+
+
