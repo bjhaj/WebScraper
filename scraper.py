@@ -5,7 +5,11 @@ from bs4 import BeautifulSoup
 import pdfkit
 
 def save_webpage_as_pdf(url, output_path):
-    pdfkit.from_url(url, output_path)
+    try:
+        pdfkit.from_url(url, output_path)
+        print(f"PDF saved for {url}")
+    except Exception as e:
+        print(f"Error while saving PDF for {url}: {e}")
 
 def main(url, output_directory):
     # Create the output directory if it doesn't exist
@@ -32,7 +36,7 @@ def main(url, output_directory):
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print("Usage: python script_name.py website_url output_directory")
+        print("Usage: python web_scraper.py website_url output_directory")
         sys.exit(1)
 
     website_url = sys.argv[1]
