@@ -21,6 +21,7 @@ brew install --cask wkhtmltopdf
 
 ### Linux
 Open a terminal and execute the following command to install `wkhtmltopdf`:
+
 On Debian/Ubuntu-based systems:
 ```bash
 sudo apt-get install wkhtmltopdf
