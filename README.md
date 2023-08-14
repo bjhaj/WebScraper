@@ -36,7 +36,11 @@ sudo yum install wkhtmltopdf
 ```
 
 ## Running the Tool
-After you have `wkhtmltopdf` installed, you can run the WebScraper tool using the following command:
+After you have `wkhtmltopdf` installed, you need to install the rest of the dependencies:
+```bash
+pip install -r requirements.txt
+```
+Once you have all the dependencies installed, you can run the WebScraper tool using the following command:
 ```bash
 python web_scraper.py website_url output_directory
 ```
